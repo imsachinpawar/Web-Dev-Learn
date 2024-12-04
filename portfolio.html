@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ff9800;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li> <a href="#skill">Skill</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+<section id="about">
+<img src="about.png" alt="SM Pawar" width="100px">
+<h2>About Me</h2>
+<p>
+Hi, I'm Sachin Pawar! Student of BLDES College of
+Engineering and Technology Vijayapur 586101,
+I'm Pursuing Master in Computer Application
+This is My basic information
+</p>
+</section>
+
+<!-- 4. Skills Section with Lists (5 minutes)
+Create a Skills section using a <section> tag.
+Add a heading (<h2>) titled "Skills."
+Use a nested list (<ul> and <ol>) to display technical and non-technical skills.
+Example: Technical skills as an unordered list, with each skill's details (e.g., tools, technologies) as an ordered list. -->
+<section id="skill">     
+    <h2>My Skills</h2>   
+        <ul>
+            <li>
+                <strong>Technical Skills</strong>
+                <ol>
+                    <li>
+                        <strong>Programming Languages:</strong> Python, Java, JavaScript, C++
+                    </li>
+                    <li>
+                        <strong>Web Development:</strong> HTML, CSS, React, Node.js
+                    </li>
+                    <li>
+                        <strong>Database Management:</strong> MySQL, MongoDB, PostgreSQL
+                    </li>
+                    <li>
+                        <strong>Cybersecurity Tools:</strong> Wireshark, Nmap, Metasploit
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <strong>Non-Technical Skills</strong>
+                <ol>
+                    <li>
+                        <strong>Leadership:</strong> Led a team of 10 to deliver a startup project on time.
+                    </li>
+                    <li>
+                        <strong>Communication:</strong> Public speaking, content writing.
+                    </li>
+                    <li>
+                        <strong>Problem Solving:</strong> Effective decision-making under pressure.
+                    </li>
+                    <li>
+                        <strong>Project Management:</strong>JIRA.
+                    </li>
+                </ol>
+            </li>
+        </ul>
+</section>
+<!-- 5. rojects Section with Table and Links (10 minutes)
+Create a Projects section using a <section> tag.
+Add a heading (<h2>) titled "Projects."
+Use a <table> to display your projects with the following columns:
+Name: Add a hyperlink to the project if it's hosted online.
+Description: Brief project summary.
+Technologies Used: List key technologies for each project.
+Year: Mention when you completed it. -->
+<section id="project">
+<h2>My Projects</h2>
+<table border="2">
+    <!-- <caption>Details</caption> -->
+<thead>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Technologies used</th>
+    <th>Year</th>
+</th>
+</thead>
+<tbody>
+    <tr>
+    <td>My portfolio</td>
+    <td>Basic project</td>
+    <td>VS code</td>
+    <td>2024</td>
+</tr>
+</tbody>
+</table>
+</section>
+<!-- 6. Experience Section with Semantic Elements (5 minutes)
+Add an Experience section using a <section> tag.
+Use <article> tags to display individual experiences (e.g., internships, jobs).
+Include:
+Role/Position
+Company Name
+Duration
+A brief description of your responsibilities. -->
+<section id="experience">
+    <h2>Experience</h2>
+    <article>
+<h3>internships</h3>
+<p>Role: cyber Analyst</p>
+<p>Company: xyz</p>
+<p>Duration: 3 moths</p>
+<p>responsibilities: finding the vulnerabilities </p>
+    </article>
+<article>
+<h3>Job</h3>
+<p>Role: Data Analyst</p>
+<p>Company: Verificient Solution Pvt Ltd</p>
+<p>Duration: 2 Years</p>
+<p>responsibilities: Handling the clients customer through the chats and real time monitoring and updating the status of the data in to the database </p>
+</article>
+</section>
+
+<!-- 7. Contact Me Section with a Form (10 minutes)
+Create a Contact Me section using a <form> tag.
+Add the following form fields:
+Text Inputs: Name, Email, Phone Number.
+Dropdown: Inquiry Type (e.g., Feedback, Collaboration, Support).
+Radio Buttons: Preferred contact method (Email, Phone).
+Checkbox: Terms and Conditions agreement.
+Textarea: For the message.
+Submit Button: Include a descriptive label for the button. -->
+<section id="contact">
+    <h2>Contact Me</h2>
+<form action="">
+    <div>
+        Name:<input type="text" id="name" placeholder="Enter Your Name" required>
+    </div> <br>
+    <div>
+        <label for="email"> Email: </label>
+        <input type="email" id="email" placeholder="Enter Your Email ID" required>
+    </div> <br>
+    <div>
+        <label for="Phone"> Phone No:</label>
+        <input type="number" id="Phone" placeholder="Enter Your mobile" required>
+    </div> <br>
+
+    <div>
+        <label for=""> Agree</label>
+        <input type="checkbox" checked>
+    </div> <br>
+
+    <div>
+    <label for=""> Enquiry Type:</label>
+    <select>
+        <option value="">Feedback</option>
+        <option value="">Collaboration</option>
+        <option value="">Support</option>
+    </select>
+</div> <br>
+<div> 
+    <label for="choose"> Preferred contact: </label>
+    <input type="radio" name="choose" value="email">Email
+    <input type="radio" name="choose" value="number">Number
+</div> <br>
+<div>
+    <label for="">Feedback</label>
+    <input type="text" aria-expanded="true">
+</div>
+<button type="submit"> Submit </button>
+</form>
+</section>
+
+<section id="testimonials">
+    <h2>Testimonials</h2>
+  
+    <article>
+      <blockquote>
+        <p>"Balakrishna is a brilliant software developer who delivered high-quality work on time. His problem-solving skills are unmatched, and his dedication to the project helped us achieve remarkable results."</p>
+        <footer>- Jane Doe, Project Manager at Tech Innovators Inc.</footer>
+      </blockquote>
+    </article>
+  
+    <article>
+      <blockquote>
+        <p>"Working with Balakrishna on cybersecurity solutions was a game-changer for our company. His expertise in securing our systems significantly reduced potential threats."</p>
+        <footer>- John Smith, CEO at SecureNet Solutions</footer>
+      </blockquote>
+    </article>
+  </section>
+  
+  <section id="media">
+    <h2>Media</h2>
+  
+    <!-- Embed a Video -->
+    <h3>College video</h3>
+    <!-- <iframe width="560" height="315" src="https://youtu.be/LlL_CtOaN7g" title="YouTube video player" frameborder="0" allow="accelerometer autoplay" allowfullscreen></iframe> -->
+    <iframe width="560" height="315" src="https://youtu.be/LlL_CtOaN7g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!-- Embed a Google Map -->
+    <h3>My College Location</h3>
+    <iframe src="https://www.google.com/maps/place/BLDEA's+V+P+Dr+PG+Halakatti+College+of+Engineering+%26+Technology/@16.8484717,75.7149178,17z/data=!3m2!4b1!5s0x3bc65589a9a8f743:0xef031d56c30fa3af!4m6!3m5!1s0x3bc6558982df81f7:0x589f36a4e9dc6fab!8m2!3d16.8484717!4d75.7174927!16s%2Fm%2F0hnchgt?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0" allowfullscreen="" loading="lazy"> </iframe>
+  </section>
+
+
+</body>
+<footer>
+    <ul>
+      <li><a href="https://www.linkedin.com/in/sachinpawar-ka/" target="_blank">LinkedIn</a></li> <br>
+      <li><a href="https://github.com/imsachinpawar" target="_blank">GitHub</a></li>
+    </ul>
+    <p>&copy; 2024 Balakrishna Moghari. All rights reserved.</p>
+    <p><a href="#top">Back to Top</a></p>
+  </footer>
+</html>

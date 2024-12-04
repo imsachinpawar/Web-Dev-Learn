@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning Form</h1>
+    <form action="post.html"> 
+        <div>
+            <label for="name"> Name: </label>
+            <input type="text" id="name" placeholder="Enter Your Name" required>
+        </div> <br>
+
+        <div>
+            <label for="password"> Password: </label>
+            <input type="password" id="password" placeholder="Enter Your Passwoord" required minlength="6">
+        </div> <br>
+<div>
+    <label for="email"> Email: </label>
+    <input type="email" id="email" placeholder="Enter Your Email ID" required>
+</div> <br>
+
+<div>
+    <label for="date"> Date: </label>
+    <input type="date" id="date" required>
+
+</div> <br>
+   
+<div>
+    <label for="Phone"> Phone No: </label>
+    <input type="number" id="Phone" required>
+</div> <br>
+<div> 
+    <label for="gender"> Gender: </label>
+    <input type="radio" name="gender" value="Female">Male
+    <input type="radio" name="gender" value="Male">Female
+</div> <br>
+<div>
+    <label for="">Do you agree</label>
+    <input type="checkbox" checked>
+</div>
+<div>
+    <label for=""> Gender Select:</label>
+    <select>
+        <option value="">He</option>
+        <option value="">She</option>
+        <option value="">Others</option>
+    </select>
+</div> <br>
+<div>
+    <label for="">Resume:</label>
+    <input type="file" accept=".png,.pdf,.jpg">
+</div> <br>
+
+<div>
+<label for=""> Difficulty: </label>
+<input type="range" >
+</div>
+
+      <button type="submit"> Submit </button>
+        <button type="reset"> Reset </button>
+
+    </form>
+</body>
+</html>

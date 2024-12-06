@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+<style>
+#container{
+    padding: 30px;
+    border: 3px solid black;
+    height: 100vh;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;/*Space*/
+    align-items: center; /*xxx*/
+}
+img{
+    margin: 2px;
+    border: 3px solid black;
+}
+#bo1{
+    align-self: flex-start;
+}
+#bo2{
+    align-self:center;
+}
+#bo3{
+    align-self:middle;
+}
+#bo4{
+align-self:flex-end;
+}
+</style>
+
+</head>
+<body>
+    <div id="container">
+        <div id="bo1"> <img src="https://images.unsplash.com/photo-1733103373160-003dc53ccdba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0fHx8ZW58MHx8fHx8" alt="" height="200px" width="200px" ></div>
+            <div id="bo2"><img src="https://plus.unsplash.com/premium_photo-1731622041326-413d7351c75a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8" alt=""height="200px" width="200px"></div>
+                <div id="bo3"><img src="https://images.unsplash.com/photo-1733234976396-87cf34ae6038?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8" alt=""height="200px" width="200px"></div>
+                    <div id="bo4"><img src="https://plus.unsplash.com/premium_photo-1732700372164-21449633fa27?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D" alt="" height="200px" width="200px" ></div>
+    </div>
+</body>
+</html>

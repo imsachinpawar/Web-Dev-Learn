@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .navbar{
+            background-color: rgb(22,21,29);
+            height: 50px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 0px 24px 0px 24px;
+            border-radius: 25px;
+        }
+        .navlink{
+            /* border: solid rgb(16, 210, 236);
+            border-radius: 25px; */
+            text-decoration: none;
+            color: #f25a3e;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        .innernavbar{
+            display: flex;
+            justify-content: center;
+        }
+        .innernavlink{
+
+            text-decoration: none;
+            color:aliceblue;
+            padding: 0px 16px 0px 16px;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        .btn{
+            text-decoration: none;
+            background-color: #f25a3e;
+            color: aliceblue;
+            padding: 0px 16px 0px 16px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            border-radius: 25px;
+        }
+        @media (max-width:550px) {
+            .navbar{
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+            .innernavbar{
+    flex-direction: column;
+            }
+            .navlink{
+                width: ;
+                border-bottom: 1px solid red;
+                padding: 8px 0px;
+            }
+            .innernavbar{
+                flex-direction:column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="navlink">BLDEACET</a>
+        <div class="innernavbar">
+            <a href="#" class="innernavlink">Learn</a>
+            <a href="#" class="innernavlink">Practice</a>
+            <a href="#" class="innernavlink">Contact</a>
+            <a href="#" class="innernavlink">PAQ</a>
+        </div>
+        <a href="#" class="btn">Login</a>
+    </div>
+
+</body>
+</html>

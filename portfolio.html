@@ -46,6 +46,77 @@
         .nav-links a:hover {
             color: #ff9800;
         }
+
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .navbar{
+            background-color: rgb(22,21,29);
+            height: 50px;
+            display: flex;
+            justify-content:space-between;
+            align-items: center;
+            padding: 0px 24px 0px 24px;
+            border-radius: 25px;
+        }
+        .navlink{
+            /* border: solid rgb(16, 210, 236);
+            border-radius: 25px; */
+            text-decoration: none;
+            color: #f25a3e;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+        .innernavbar{
+            display: flex;
+            justify-content: center;
+        }
+        .innernavlink{
+
+            text-decoration: none;
+            color:aliceblue;
+            padding: 0px 16px 0px 16px;
+            font-size: 1.5rem;
+            font-weight: 800;
+        }
+
+        /* .btn{
+            text-decoration: none;
+            background-color: #f25a3e;
+            color: aliceblue;
+            padding: 0px 16px 0px 16px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            border-radius: 25px;
+        } */
+        @media (max-width:550px) {
+            .navbar{
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+            .navlink{
+                width: ;
+                border-bottom: 1px solid red;
+                padding: 8px 0px;
+            }
+            .innernavbar{
+    flex-direction: column;
+    text-align: center
+    width:100%;
+            }
+
+            .innernavbar{
+                flex-direction:column;
+                text-align: center;
+            }
+            .innernavlink{
+                border-bottom: 2px solid gray;
+                padding: 8px 0px;
+            }
     </style>
 
 </head>
@@ -53,17 +124,16 @@
     <nav class="navbar">
         <div class="logo">My Portfolio</div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li> <a href="#skill">Skill</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" class="innernavlink">About me</a></li>
+            <li> <a href="#skill"class="innernavlink">Skill</a></li>
+            <li><a href="#project"class="innernavlink">Projects</a></li>
+            <li><a href="#experience" class="innernavlink">Experience</a></li>
+            <li><a href="#contact" class="innernavlink">Contact</a></li>
         </ul>
     </nav>
 <section id="about">
+    <h2>About Me</h2>
 <img src="about.png" alt="SM Pawar" width="100px">
-<h2>About Me</h2>
 <p>
 Hi, I'm Sachin Pawar! Student of BLDES College of
 Engineering and Technology Vijayapur 586101,
@@ -72,7 +142,7 @@ This is My basic information
 </p>
 </section>
 
-<!-- 4. Skills Section with Lists (5 minutes)
+/* <!-- 4. Skills Section with Lists (5 minutes)
 Create a Skills section using a <section> tag.
 Add a heading (<h2>) titled "Skills."
 Use a nested list (<ul> and <ol>) to display technical and non-technical skills.
@@ -116,7 +186,7 @@ Example: Technical skills as an unordered list, with each skill's details (e.g.,
             </li>
         </ul>
 </section>
-<!-- 5. rojects Section with Table and Links (10 minutes)
+<!-- 5. projects Section with Table and Links (10 minutes)
 Create a Projects section using a <section> tag.
 Add a heading (<h2>) titled "Projects."
 Use a <table> to display your projects with the following columns:
@@ -250,7 +320,7 @@ Submit Button: Include a descriptive label for the button. -->
     <!-- Embed a Google Map -->
     <h3>My College Location</h3>
     <iframe src="https://www.google.com/maps/place/BLDEA's+V+P+Dr+PG+Halakatti+College+of+Engineering+%26+Technology/@16.8484717,75.7149178,17z/data=!3m2!4b1!5s0x3bc65589a9a8f743:0xef031d56c30fa3af!4m6!3m5!1s0x3bc6558982df81f7:0x589f36a4e9dc6fab!8m2!3d16.8484717!4d75.7174927!16s%2Fm%2F0hnchgt?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D" width="600" height="450" style="border:0" allowfullscreen="" loading="lazy"> </iframe>
-  </section>
+  </section> */
 
 
 </body>
